@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/city12"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="城市"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/diming1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="输入地名"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/city123"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="城市"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/diming12"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="输入地名"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_jiache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="驾车路线"
+        android:textSize="20dp"/>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/jsmap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"/>
+
+</LinearLayout>

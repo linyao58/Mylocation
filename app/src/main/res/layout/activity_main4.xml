@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检索城市:"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/scity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关键字:"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/sguanjianzi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="搜索"
+        android:textSize="20dp"/>
+
+    <ListView
+        android:id="@+id/sug_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <AutoCompleteTextView
+        android:id="@+id/editText"
+        android:layout_width="@dimen/activity_main_editext_width"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/main_editext_name"
+        android:layout_marginLeft="@dimen/activity_main_editext__marleft"/>
+
+
+
+</LinearLayout>
